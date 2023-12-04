@@ -29,23 +29,23 @@ public class CherishedItemsCommon {
             final ItemStack stack = entity.getItem();
 
             if (config.defaultTime.enabled) {
-                accessor.cherisheditems$setDespawnTime(config.defaultTime.despawnTime);
+                setAgeWithRestrictions(accessor, 6000 - config.defaultTime.despawnTime);
             }
 
             if (config.extendedTag.enabled && stack.is(TAG_EXTENDED_DESPAWN_TIME)) {
-                accessor.cherisheditems$setDespawnTime(config.extendedTag.despawnTime);
+                setAgeWithRestrictions(accessor, 6000 - config.extendedTag.despawnTime);
             }
 
             if (config.shortenedTag.enabled && stack.is(TAG_SHORTENED_DESPAWN_TIME)) {
-                accessor.cherisheditems$setDespawnTime(config.shortenedTag.despawnTime);
+                setAgeWithRestrictions(accessor, 6000 - config.shortenedTag.despawnTime);
             }
 
             if (config.renamedItems.enabled && stack.hasCustomHoverName()) {
-                accessor.cherisheditems$setDespawnTime(entity.getAge() - config.renamedItems.despawnTime);
+                setAgeWithRestrictions(accessor,entity.getAge() - config.renamedItems.despawnTime);
             }
 
             if (config.enchantedItems.enabled && stack.isEnchanted()) {
-                accessor.cherisheditems$setDespawnTime(entity.getAge() - config.enchantedItems.despawnTime);
+                setAgeWithRestrictions(accessor,entity.getAge() - config.enchantedItems.despawnTime);
             }
         }
     }
