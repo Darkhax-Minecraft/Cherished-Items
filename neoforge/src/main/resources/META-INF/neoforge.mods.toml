@@ -1,0 +1,43 @@
+modLoader = "javafml"
+license = "LGPL 2.1"
+issueTrackerURL = "https://github.com/Darkhax-Minecraft/Cherished-Items/issues"
+
+[[mods]]
+modId = "cherisheditems"
+version = "26.1.2.0"
+displayName = "CherishedItems"
+updateJSONURL = "https://updates.blamejared.com/get?n=cherisheditems&gv=26.1.2&ml=neoforge"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/cherished-items"
+logoFile = "logo_cherisheditems.png"
+logoBlur = false
+credits = "This project is made possible with Patreon support from players like you. Thank you! lothrazar, techsquirrel, Keyana , Darkosto, Tobias Ward, noobanidus"
+authors = "Darkhax"
+description = "Adds new features and config options related to item despawning."
+
+[[mixins]]
+config = "cherisheditems.common.mixins.json"
+
+[[mixins]]
+config = "cherisheditems.neoforge.mixins.json"
+
+[[dependencies.cherisheditems]]
+modId = "minecraft"
+type = "required"
+versionRange = "26.1"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cherisheditems]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.0.1-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cherisheditems]]
+modId = "prickle"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+

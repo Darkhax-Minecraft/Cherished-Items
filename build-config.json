@@ -1,0 +1,44 @@
+{
+  "mod": {
+    "name": "CherishedItems",
+    "group": "net.darkhax.cherisheditems",
+    "authors": [
+      "Darkhax"
+    ],
+    "id": "cherisheditems",
+    "license": "LGPL 2.1",
+    "description": "Adds new features and config options related to item despawning.",
+    "repo": "https://github.com/Darkhax-Minecraft/Cherished-Items",
+    "client": false
+  },
+  "dependencies": [
+    {
+      "name": "Prickle",
+      "type": "required",
+      "mod_id": {
+        "id": "prickle"
+      },
+      "maven": {
+        "common": "net.darkhax.pricklemc:prickle-common-26.1.2:26.1.2.4",
+        "neoforge": "net.darkhax.pricklemc:prickle-neoforge-26.1.2:26.1.2.4",
+        "fabric": "net.darkhax.pricklemc:prickle-fabric-26.1.2:26.1.2.4"
+      },
+      "curseforge": {
+        "slug": "prickle",
+        "id": "1023259"
+      },
+      "modrinth": {
+        "slug": "prickle",
+        "id": "aaRl8GiW"
+      }
+    }
+  ],
+  "curseforge": {
+    "slug": "cherished-items",
+    "id": "946452"
+  },
+  "modrinth": {
+    "slug": "cherished-items",
+    "id": "rg7KmUbe"
+  }
+}
